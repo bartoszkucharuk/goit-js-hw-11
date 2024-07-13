@@ -1,11 +1,11 @@
 import { getPictures } from './js/API(pixabay).js';
-import { createMarkup, onFetchError } from './js/render-functions';
+import { createMarkup, onFetchError } from './js/galleryMarkups.js';
 
-const formSearch = document.querySelector('.form-search');
+const searchForm = document.querySelector('.search-form');
 const cardContainer = document.querySelector('.card-container');
 const loader = document.querySelector('.loader');
 
-formSearch.addEventListener('submit', handlerSearch);
+searchForm.addEventListener('submit', handlerSearch);
 
 function handlerSearch(event) {
     event.preventDefault();

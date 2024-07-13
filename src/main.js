@@ -1,7 +1,4 @@
-
-
-
-import { getPictures } from './js/pixabay-api.js';
+import { getPictures } from './js/API(pixabay).js';
 import { createMarkup, onFetchError } from './js/render-functions';
 
 const formSearch = document.querySelector('.form-search');

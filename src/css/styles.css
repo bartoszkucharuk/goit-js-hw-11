@@ -28,15 +28,17 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
  
 .search-form {
   margin-top: 36px;
+  margin-bottom: 32px;
+  gap: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 8px;
 }
 
 .search-input {
@@ -91,10 +93,8 @@ img {
   background-color: #6c8cff;
 }
 
-
-/*
 .card-container {
-  max-width: 1300px;
+  max-width: 1128px;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -107,12 +107,16 @@ img {
 
 .list-item {
   width: calc((100% - 48px) /3);
-  height: 340px;
+  height: 200px;
+  box-sizing: border-box;
+  border: 1px dashed blue;
 }
 
 .card-image {
-  width: 100%;
-  height: auto;
+  box-sizing:border-box;
+  border: 1px dashed orangered;
+  width: 360px;
+  height: 152px;
 }
 
 .card-description-list {
@@ -140,9 +144,11 @@ img {
 .card-description-value {
   font-size: 12px;
   line-height: 2.0;
-  letter-spacing: 4em;
+  letter-spacing: 0.04em;
 } 
-*/
+
+
+/*
 .loader {
   width: 48px;
   height: 48px;
@@ -184,3 +190,4 @@ img {
     transform: scale(1) translate(-50%, -50%);
   }
 }
+*/

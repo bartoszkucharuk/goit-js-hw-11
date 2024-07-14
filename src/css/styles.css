@@ -90,9 +90,9 @@ img {
 .submit-button:hover {
   background-color: #6c8cff;
 }
+
+
 /*
-
-
 .card-container {
   max-width: 1300px;
   display: flex;
@@ -142,7 +142,7 @@ img {
   line-height: 2.0;
   letter-spacing: 4em;
 } 
-
+*/
 .loader {
   width: 48px;
   height: 48px;
@@ -163,12 +163,12 @@ img {
   top: 50%;
   left: 50%;
   transform: scale(0.5) translate(0, 0);
-  background-color: #4aa7e6;
+  background-color: #4e75ff;
   border-radius: 50%;
   animation: animloader 1s infinite ease-in-out;
 }
 .loader::before {
-  background-color: #300cb4;
+  background-color: #808080;
   transform: scale(0.5) translate(-48px, -48px);
 }
 @keyframes rotation {
@@ -184,5 +184,3 @@ img {
     transform: scale(1) translate(-50%, -50%);
   }
 }
-  
-*/

@@ -154,6 +154,7 @@ img {
   letter-spacing: 0.04em;
 } 
 
+/* adding loader from cssLoader page */
 .loader {
   display: none;
   width: 48px;

@@ -12,7 +12,7 @@ function handlerSearch(event) {
     const form = event.currentTarget;
     const userValue = form.elements.search.value.toLowerCase();
 
-    loader.style.display = "flex";
+    loader.style.display = "block";
 
     getPictures(userValue)
         .then((data) => createMarkup(data, cardContainer))

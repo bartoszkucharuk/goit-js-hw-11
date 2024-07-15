@@ -9,7 +9,7 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 // making a function that check if we had any answers/hits in a database of API
 export function createMarkup({ hits }, cardContainer) {
     if (hits.length === 0) {
-        onFetchError();
+        catchError();
         return;
     }
 
@@ -67,7 +67,7 @@ export function createMarkup({ hits }, cardContainer) {
     lightbox.refresh();
 }
 // making sure that API give error information during an empty results by usin iziToasts library
-export function onFetchError() {
+export function catchError() {
     iziToast.error({
         message: 'Sorry, there are no images matching your search query. Please try again!',
     });

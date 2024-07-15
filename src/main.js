@@ -1,11 +1,11 @@
-import { getPictures } from './js/API(pixabay).js';
-import { createMarkup, onFetchError } from './js/galleryMarkups.js';
+import { getPictures } from "./js/API(pixabay).js";
+import { createMarkup, onFetchError } from "./js/galleryMarkups.js";
 
-const searchForm = document.querySelector('.search-form');
-const cardContainer = document.querySelector('.card-container');
-const loader = document.querySelector('.loader');
+const searchForm = document.querySelector(".search-form");
+const cardContainer = document.querySelector(".card-container");
+const loader = document.querySelector(".loader");
 
-searchForm.addEventListener('submit', handlerSearch);
+searchForm.addEventListener("submit", handlerSearch);
 
 function handlerSearch(event) {
     event.preventDefault();
@@ -13,22 +13,13 @@ function handlerSearch(event) {
     const form = event.currentTarget;
     const userValue = form.elements.search.value.toLowerCase();
 
-    showLoader();
+    loader.style.display = "flex"
 
     getPictures(userValue)
         .then((data) => createMarkup(data, cardContainer))
         .catch(onFetchError)
         .finally(() => {
             form.reset();
-            hideLoader();
+            loader.style.display = "none";
         });
-}
-
-function showLoader() {
-    loader.style.display = 'flex';
-}
-
-function hideLoader() {
-    
-    loader.style.display = 'none';
 }
